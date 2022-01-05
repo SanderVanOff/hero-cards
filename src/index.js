@@ -40,7 +40,7 @@ const render = (list) => {
         list.forEach(item =>{
             cardsBlock.insertAdjacentHTML('afterbegin', `
             <div class="card"   >
-                <img src="../db/${item.photo}" class="card-img-top" alt="${item.name}">
+                <img src="./db/${item.photo}" class="card-img-top" alt="${item.name}">
                 <div class="card-body">
                     <h5 class="card-title card-img-overlay text-white">${item.name}</h5>
                     <p class="card-text">
