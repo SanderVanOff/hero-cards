@@ -1,0 +1,22 @@
+body {
+    background: #24292f;
+}
+main {
+    margin: 70px 0;
+}
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card .card-title {
+    top: 250px;
+    background-color: rgba(0,0,0,0.3);
+    height: 50px;
+}
