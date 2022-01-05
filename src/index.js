@@ -3,6 +3,7 @@
 const cardsBlock = document.querySelector('.cards');
 const formSelect = document.querySelector('.form-select');
 const alertBlock = document.querySelector('.alert');
+const logo = document.querySelector('.logo');
 let cardsList = [];
 let moviesList = [];
 
@@ -103,6 +104,12 @@ formSelect.addEventListener('change', (e) => {
         }
     });
     render(newArr);
+});
+
+logo.addEventListener('click', (e) => {
+    e.preventDefault();
+    render(cardsList);
+    formSelect.value = formSelect[0].value;
 });
 
 init();
